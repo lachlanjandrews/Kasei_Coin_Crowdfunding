@@ -7,21 +7,11 @@ In this challenge, we were asked to create a joint savings account for two accou
 
 ## Technologies
 
-The credit risk resampling analysis leverages Python 3.8+ and utilizes the following project libraries and dependencies:
-
-[Remix](remix.ethereum.org) - A free and powerful online application that can run Solidity files.
-
-
----
-
-## Installation Guide
-
-
 This repository uses the following project libraries and dependencies:
 * [Remix](remix.ethereum.org), which can be accessed online with a free account or any other programs that can run solidity.
 * [Streamlit](https://streamlit.io/) - a Python library that turns Python scripts into shareable web apps
 
----  
+--- 
 
 ### **Run instructions:**
 To run this analysis, simply clone the repository or download the files. Open Remix and run the following file: 
@@ -29,15 +19,20 @@ To run this analysis, simply clone the repository or download the files. Open Re
 KaseiCoinCrowdsale.sol
 ```
 ___
+
 ## Results
 
-After completing the code, the first step was to make sure the accounts selected were correct.
+After completing the code, the first step was to make sure the code compiled correctly.
 
-![Accounts](/Screenshots/accounts.PNG)
+![KTcompiler](/Screenshots/KTcompiler.PNG)
+![KCCcompiler](/Screenshots/KCCcompiler.PNG)
 
-3 transactions were then made, the first transaction was depositing 1 ether as wei.
+Then the deployment of the crowdsale was required. The following was input into the deployment requirements:
+* KaseiCoin (NAME)
+* KAS (SYMBOL)
+* Any valid address (WALLET)
 
-![Transaction1](/Screenshots/transaction1.PNG)
+![Contract_Deployment](/Screenshots/contract_deployment.PNG)
 
 The second deposit was 10 ether as wei.
 
