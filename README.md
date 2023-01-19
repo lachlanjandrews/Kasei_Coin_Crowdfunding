@@ -1,22 +1,27 @@
 # Kasei Coin Crowdfunding
 Module 21 Challenge
 
-In this challenge, we were asked to create a joint savings account for two accounts. We then had to deposit ETHER into the contract and then withdraw it back out to the respective wallets.
+In this challenge, we were asked to create a token for Mars called Kasei Coin (Token) and then a crowdsale for that token. Using Remix, MetaMask and Ganache, I was able to complete this, along with double checking that the contract had been successfully deployed and the transactions were completed by checking Ganache.
 
 ---
 
 ## Technologies
 
 This repository uses the following project libraries and dependencies:
-* [Remix](remix.ethereum.org), which can be accessed online with a free account or any other programs that can run solidity.
-* [Streamlit](https://streamlit.io/) - a Python library that turns Python scripts into shareable web apps
+* [Remix](remix.ethereum.org) - which can be accessed online with a free account or any other programs that can run solidity.
+* [Streamlit](https://streamlit.io/) - a Python library that turns Python scripts into shareable web apps.
+* [MetaMask](https://metamask.io/) - a crypto wallet extension that allows transactions and the creation of smart contracts.
+* [Ganache](https://trufflesuite.com/ganache/) - a program that allows for the use of test wallets and blockchain tracking.
 
 --- 
 
 ### **Run instructions:**
-To run this analysis, simply clone the repository or download the files. Open Remix and run the following file: 
+To run this analysis, simply clone the repository or download the files. Open Remix and run the following files: 
 ```python
 KaseiCoinCrowdsale.sol
+```
+```python
+KaseiCoin.sol
 ```
 ___
 
@@ -34,21 +39,27 @@ Then the deployment of the crowdsale was required. The following was input into 
 
 ![Contract_Deployment](/Screenshots/contract_deployment.PNG)
 
-The second deposit was 10 ether as wei.
+This was then confirmed on Ganache as well.
 
-![Transaction2](/Screenshots/transaction2.PNG)
+![Ganache_Confirmation](/Screenshots/contract_confirm.PNG)
 
-The third deposit was 5 ether.
+Next, we inserted the contract addresses and loaded the Crowdsale and Token contracts.
 
-![Transaction3](/Screenshots/transaction3.PNG)
+![Token_Link](/Screenshots/token_link.PNG)
+![Crowdsale_Link](/Screenshots/crowdsale_link.PNG)
 
-We were then asked to make some withdrawals, one into each of the 2 selected accounts. The first withdrawal was 5 ether into accountOne.
+The wallet address linked to my MetaMask was then put as the initial buying address, purchasing 5 Ether worth of Kasei Tokens.
 
-![Withdrawal1](/Screenshots/withdraw1.PNG)
+![Initial_Buy](/Screenshots/initial_buy.PNG)
 
-The second withdrawal was 10 ether into accountTwo.
+This was also confirmed on Ganache.
 
-![Withdrawal2](/Screenshots/withdraw2.PNG)
+![Final_Confirmation](/Screenshots/ganache_confirmation.PNG)
+
+To make sure that all of the contracts were working together and correctly, I double checked the Wei raised, the Kasei Token total supply and the Kasei Token balance of my MetaMask account.
+
+![wei_generated](/Screenshots/wei_generated.PNG)
+![balance_total_supply](/Screenshots/balance&totalsupply.PNG)
 
 ---
 
