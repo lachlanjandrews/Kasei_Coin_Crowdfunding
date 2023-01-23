@@ -18,10 +18,10 @@ This repository uses the following project libraries and dependencies:
 ### **Run instructions:**
 To run this analysis, simply clone the repository or download the files. Open Remix and run the following files: 
 ```python
-KaseiCoinCrowdsale.sol
+KaseiCoin.sol
 ```
 ```python
-KaseiCoin.sol
+KaseiCoinCrowdsale.sol
 ```
 ___
 
